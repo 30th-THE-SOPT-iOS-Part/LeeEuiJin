@@ -8,22 +8,44 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    var message1 :String?
+    @IBOutlet weak var tabNextBtn: UIButton!
+    @IBOutlet weak var userPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.topItem?.title=""
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "icn_back_24")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "icn_back_24")
+        self.navigationController?.navigationBar.tintColor = .black
+        tabNextBtn.isEnabled = false
+        tabNextBtn.backgroundColor = UIColor(displayP3Red: 100/255, green: 150/255, blue: 250/255, alpha: 1)
+        tabNextBtn.titleLabel?.textColor = .white
+        self.userPassword.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        
+        
+    
     }
+    @objc func textFieldDidChange(_ sender: Any?) {
+           if userPassword.hasText == true {
+                 tabNextBtn.isEnabled = true
+               }
+           else {
+               tabNextBtn.isEnabled = false
+           }
+       }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tabNextBtn(_ sender: Any) {
+        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController") as? ThirdViewController else {return}
+        if let message1 = message1{
+            nextVC2.message2 = message1
+        }
+        nextVC2.modalPresentationStyle = .pageSheet
+        nextVC2.modalTransitionStyle = .crossDissolve
+        self.present(nextVC2, animated: true, completion: nil)
     }
-    */
-
+    
+  
 }

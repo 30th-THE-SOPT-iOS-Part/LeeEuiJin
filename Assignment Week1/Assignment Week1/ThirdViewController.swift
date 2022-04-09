@@ -9,9 +9,12 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var welcomeMessage: UILabel!
+    var message2: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setMessage()
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +29,16 @@ class ThirdViewController: UIViewController {
     }
     */
 
+    @IBAction func tabFinalBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func setMessage(){
+        if let message2 = message2 {
+            welcomeMessage.text = message2 + "님, Instagram에\n오신 것을 환영합니다"
+            welcomeMessage.sizeToFit()
+            welcomeMessage.textAlignment = .center
+            welcomeMessage.center.x = self.view.center.x
+        }
+    }
 }
