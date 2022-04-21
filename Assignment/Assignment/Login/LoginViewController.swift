@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Assignment Week1
 //
 //  Created by 이의진 on 2022/04/07.
@@ -13,6 +13,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginPassword: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var passwordBtn: UIButton!
+    
     
     // MARK: LifeCycle
     override func viewDidLoad() {
@@ -26,32 +28,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private func configureUI(){
         loginEmail.clearButtonMode = .unlessEditing
         loginBtn.isEnabled = false
-        signUpBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
+        passwordBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
         loginBtn.backgroundColor = UIColor(displayP3Red: 100/255, green: 150/255, blue: 250/255, alpha: 1)
     }
     
     
     //MARK: - @IBAction
     @IBAction func tabLoginBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController") as? ThirdViewController else {return}
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         nextVC.modalPresentationStyle = .pageSheet
         nextVC.modalTransitionStyle = .crossDissolve
         nextVC.message2 = loginEmail.text
         self.present(nextVC, animated: true, completion: nil)
     }
     
-    @IBAction func tabSigninBtn(_ sender: Any) {
+    @IBAction func tabSignUpBtn(_ sender: Any) {
         guard let nextVC =
                 self.storyboard?.instantiateViewController(withIdentifier: "UserNameViewController") as? UserNameViewController else {return}
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     @IBAction func tabPasswordBtn(_ sender: Any) {
-        if signUpBtn.currentImage == UIImage(named: "password_hidden"){
-            signUpBtn.setImage(UIImage(named:"password_shown"), for: .normal)
+        if passwordBtn.currentImage == UIImage(named: "password_hidden"){
+            passwordBtn.setImage(UIImage(named:"password_shown"), for: .normal)
             loginPassword.isSecureTextEntry = false
         } else {
-            signUpBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
+            passwordBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
             loginPassword.isSecureTextEntry = true
         }
         

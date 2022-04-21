@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  UserNameViewController.swift
 //  Assignment Week1
 //
 //  Created by 이의진 on 2022/04/08.
@@ -36,16 +36,14 @@ class UserNameViewController: UIViewController {
     }
     
     // MARK: - @IBAction
-    @IBAction func tabToVC2Btn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {return}
+    @IBAction func tabToPassword(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else {return}
         nextVC.message1 = userName.text
         self.navigationController?.pushViewController(nextVC, animated: true)
         
     }
     
-
     // MARK: - Custom Methods
-    
     /// textField가 Filled 되면 Next 버튼을 활성화하는 메서드
     @objc func textFieldDidChange(_ sender: Any?) {
         if userName.hasText == true {
@@ -54,7 +52,4 @@ class UserNameViewController: UIViewController {
             nextBtn.isEnabled = false
         }
     }
-    
-
-
 }
