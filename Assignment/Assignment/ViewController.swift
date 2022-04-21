@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    // MARK - 
     @IBOutlet weak var loginEmail: UITextField!
     @IBOutlet weak var loginPassword: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
@@ -43,7 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func tabSigninBtn(_ sender: Any) {
         guard let nextVC =
-                self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as? FirstViewController else {return}
+                self.storyboard?.instantiateViewController(withIdentifier: "UserNameViewController") as? UserNameViewController else {return}
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     

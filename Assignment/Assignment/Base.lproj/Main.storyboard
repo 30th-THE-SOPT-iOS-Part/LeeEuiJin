@@ -67,7 +67,7 @@
                                     <action selector="tabLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHE-ua-rAL"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram%20Black%20Logo%403x.png" translatesAutoresizingMaskIntoConstraints="NO" id="zIC-Th-8vw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram%20Black%20Logo%403x" translatesAutoresizingMaskIntoConstraints="NO" id="zIC-Th-8vw">
                                 <rect key="frame" x="87" y="137" width="208" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1066.1538461538462" y="124.40758293838861"/>
         </scene>
-        <!--First View Controller-->
+        <!--User Name View Controller-->
         <scene sceneID="rGW-vD-yht">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="bWg-YW-2y3" customClass="FirstViewController" customModule="Assignment_Week1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserNameViewController" id="bWg-YW-2y3" customClass="UserNameViewController" customModule="Assignment_Week1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="383-FU-6Jr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +258,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Instagram%20Black%20Logo%403x.png" width="175" height="50"/>
+        <image name="Instagram%20Black%20Logo%403x" width="525" height="150"/>
         <image name="password%20hidden%20eye%20icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
