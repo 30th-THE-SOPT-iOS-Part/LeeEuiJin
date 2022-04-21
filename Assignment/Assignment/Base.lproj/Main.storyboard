@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_Week1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Assignment_Week1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,9 +45,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="가입하기">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="13"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="tabSigninBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9vc-Zi-Z46"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw9-GG-LO6">
                                 <rect key="frame" x="117" y="500" width="101" height="16"/>
@@ -63,9 +60,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="로그인">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="tabLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHE-ua-rAL"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram%20Black%20Logo%403x" translatesAutoresizingMaskIntoConstraints="NO" id="zIC-Th-8vw">
                                 <rect key="frame" x="87" y="137" width="208" height="103"/>
@@ -76,9 +70,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="password%20hidden%20eye%20icon"/>
-                                <connections>
-                                    <action selector="tabPasswordBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJz-c3-4DV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -86,10 +77,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="HXk-dM-wDy"/>
                     <connections>
-                        <outlet property="loginBtn" destination="ae2-lF-xKw" id="Krl-qc-jRR"/>
-                        <outlet property="loginEmail" destination="Xzt-eJ-qIx" id="oYd-Sq-zM1"/>
-                        <outlet property="loginPassword" destination="Ukp-Nh-8es" id="tp3-7W-dXr"/>
-                        <outlet property="tabPasswordBtn" destination="YIB-Of-Pj3" id="JGx-WE-JJp"/>
+                        <outlet property="loginBtn" destination="ae2-lF-xKw" id="vma-1G-Vzd"/>
+                        <outlet property="loginEmail" destination="Xzt-eJ-qIx" id="7IA-CG-NEr"/>
+                        <outlet property="loginPassword" destination="Ukp-Nh-8es" id="cXT-eC-nSj"/>
+                        <outlet property="signUpBtn" destination="TCy-Al-kfb" id="Hdt-hL-G67"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

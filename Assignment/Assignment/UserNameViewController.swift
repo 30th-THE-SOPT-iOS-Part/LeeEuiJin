@@ -35,7 +35,7 @@ class UserNameViewController: UIViewController {
         nextBtn.backgroundColor = UIColor(displayP3Red: 100/255, green: 150/255, blue: 250/255, alpha: 1)
     }
     
-    // MARK: @IBAction
+    // MARK: - @IBAction
     @IBAction func tabToVC2Btn(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {return}
         nextVC.message1 = userName.text
