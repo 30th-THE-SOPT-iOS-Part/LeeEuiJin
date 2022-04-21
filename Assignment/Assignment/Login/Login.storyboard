@@ -221,7 +221,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tabFinalBtn:" destination="IuN-qM-FKe" eventType="touchUpInside" id="iQ1-1H-4Uk"/>
+                                    <action selector="tabFinalBtn:" destination="IuN-qM-FKe" eventType="touchUpInside" id="76y-lL-1pA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-Mq-j4F">
@@ -238,6 +238,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1E-oH-Jqa">
+                                <rect key="frame" x="68" y="437" width="257" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기"/>
+                                <connections>
+                                    <action selector="tabAnotherAccountBtn:" destination="IuN-qM-FKe" eventType="touchUpInside" id="4pA-Wh-PDT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Njg-1G-0e2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

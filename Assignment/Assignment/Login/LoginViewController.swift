@@ -66,8 +66,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if loginEmail.hasText == true && loginPassword.hasText == true {
               loginBtn.isEnabled = true
             
-            }
-        else {
+            } else {
             loginBtn.isEnabled = false
         }
     }

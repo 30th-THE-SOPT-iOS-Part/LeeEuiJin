@@ -31,7 +31,13 @@ class WelcomeViewController: UIViewController {
     }
     
     // MARK: - @IBAction
-    @IBAction func tabFinalBtn(_ sender: Any) {
+    @IBAction func tabAnotherAccountBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func tabFinalBtn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
+        guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
+        self.present(nextVC, animated: true, completion: nil)
     }
 }
