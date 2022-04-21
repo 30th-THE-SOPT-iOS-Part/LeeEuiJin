@@ -12,6 +12,7 @@
                 <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Grr-gA-paj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="J4x-eI-664">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
@@ -27,50 +28,50 @@
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="105.80357142857143"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Home-->
         <scene sceneID="eRS-s3-Q50">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Home" id="fGX-5P-pRp" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" id="fGX-5P-pRp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="0gc-Nk-3y0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wid-gS-r8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-725" y="536"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Search-->
         <scene sceneID="OTf-qo-1ET">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Search" id="2VJ-6n-cun" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Search" storyboardName="Search" id="2VJ-6n-cun" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="htJ-Px-LyZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4G-hf-xXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-389" y="536"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Reels-->
         <scene sceneID="qt4-rB-VJ9">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Reels" id="33s-W5-Upo" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Reels" storyboardName="Reels" id="33s-W5-Upo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ACT-Vp-TU6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lP-2g-Bqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-25" y="536"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Shopping-->
         <scene sceneID="PF8-Y7-1qv">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Shopping" id="Ydc-DO-kVz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Shopping" storyboardName="Shopping" id="Ydc-DO-kVz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="vK2-Mo-RBT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raV-Y6-JgK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363" y="538"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Profile-->
         <scene sceneID="mp4-I5-Amd">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Profile" id="Nb0-zR-2ph" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Profile" storyboardName="Profile" id="Nb0-zR-2ph" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="vda-Re-ex4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6E-Vn-9BG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

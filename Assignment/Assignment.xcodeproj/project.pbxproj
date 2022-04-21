@@ -22,7 +22,7 @@
 		9B6153622811FAA0007794E6 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6153612811FAA0007794E6 /* ShoppingViewController.swift */; };
 		9B6153642811FAC9007794E6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6153632811FAC9007794E6 /* ProfileViewController.swift */; };
 		9B6153662811FAD2007794E6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6153652811FAD2007794E6 /* Profile.storyboard */; };
-		9B6153682811FAE7007794E6 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6153672811FAE7007794E6 /* TabBarController.storyboard */; };
+		9B6153682811FAE7007794E6 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6153672811FAE7007794E6 /* TabBar.storyboard */; };
 		9BEE4B0F27FF1FB20036280A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE4B0E27FF1FB20036280A /* AppDelegate.swift */; };
 		9BEE4B1127FF1FB20036280A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEE4B1027FF1FB20036280A /* SceneDelegate.swift */; };
 		9BEE4B1827FF1FB70036280A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEE4B1727FF1FB70036280A /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		9B6153612811FAA0007794E6 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		9B6153632811FAC9007794E6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9B6153652811FAD2007794E6 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		9B6153672811FAE7007794E6 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		9B6153672811FAE7007794E6 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9BEE4B0B27FF1FB20036280A /* Assignment Week1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment Week1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEE4B0E27FF1FB20036280A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEE4B1027FF1FB20036280A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				9B6153482811F6DC007794E6 /* Reels */,
 				9B6153472811F6C5007794E6 /* Search */,
 				9B6153462811F6C0007794E6 /* Home */,
-				9B6153672811FAE7007794E6 /* TabBarController.storyboard */,
+				9B6153672811FAE7007794E6 /* TabBar.storyboard */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B6153682811FAE7007794E6 /* TabBarController.storyboard in Resources */,
+				9B6153682811FAE7007794E6 /* TabBar.storyboard in Resources */,
 				9BEE4B1B27FF1FB70036280A /* LaunchScreen.storyboard in Resources */,
 				9BEE4B1827FF1FB70036280A /* Assets.xcassets in Resources */,
 				9B6153662811FAD2007794E6 /* Profile.storyboard in Resources */,
