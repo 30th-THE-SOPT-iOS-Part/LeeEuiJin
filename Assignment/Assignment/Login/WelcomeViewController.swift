@@ -13,11 +13,13 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Properties
     var message2: String?
+    var isSignUp: Bool = false
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpMessage()
+        setUpHideBackBtn()
     }
     
     // MARK: - UI
@@ -30,14 +32,21 @@ class WelcomeViewController: UIViewController {
         }
     }
     
+    private func setUpHideBackBtn(){
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
     // MARK: - @IBAction
     @IBAction func tabAnotherAccountBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func tabFinalBtn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
         guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
-        self.present(nextVC, animated: true, completion: nil)
+        guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
+        delegate.window?.rootViewController = nextVC
+        // 여기에서 애니메이션을 주고 싶은데 어떻게 넣지.... ㅠㅠ
     }
 }
+

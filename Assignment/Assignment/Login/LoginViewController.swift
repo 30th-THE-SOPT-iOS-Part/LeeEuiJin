@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         nextVC.modalPresentationStyle = .pageSheet
         nextVC.modalTransitionStyle = .crossDissolve
         nextVC.message2 = loginEmail.text
-        self.present(nextVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     @IBAction func tabSignUpBtn(_ sender: Any) {
