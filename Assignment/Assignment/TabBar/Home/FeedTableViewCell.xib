@@ -17,8 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-s3-YIN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="492"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-s3-YIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="489"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHv-pS-4pe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
@@ -49,7 +49,7 @@
                                         <buttonConfiguration key="configuration" style="plain" image=" More" title=""/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="G1s-gX-J1V" firstAttribute="leading" secondItem="x83-mX-0qi" secondAttribute="trailing" constant="8" id="0A1-dW-1LJ"/>
                                     <constraint firstAttribute="height" constant="46" id="56G-ao-vmX"/>
@@ -61,13 +61,13 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-aX-vKE">
-                                <rect key="frame" x="0.0" y="47" width="375" height="340"/>
+                                <rect key="frame" x="0.0" y="46" width="375" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="XLb-nI-YwI"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0j-rc-bNZ">
-                                <rect key="frame" x="0.0" y="388" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="386" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TL-PN-t16">
                                         <rect key="frame" x="10" y="8" width="24" height="24"/>
@@ -106,7 +106,7 @@
                                         <buttonConfiguration key="configuration" style="plain" image="icn_bookmark" title=""/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="XlY-cD-Dpv" firstAttribute="leading" secondItem="6TL-PN-t16" secondAttribute="trailing" constant="10" id="7GG-kf-s93"/>
                                     <constraint firstAttribute="height" constant="40" id="CCd-Is-jyb"/>
@@ -120,7 +120,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-y1-Tjp">
-                                <rect key="frame" x="0.0" y="429" width="375" height="63"/>
+                                <rect key="frame" x="0.0" y="426" width="375" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-3r-Nwz">
                                         <rect key="frame" x="12" y="6" width="200" height="18"/>
@@ -159,7 +159,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="EI0-jP-Rsp" firstAttribute="top" secondItem="eTI-3r-Nwz" secondAttribute="bottom" constant="16" id="3Q6-fG-cco"/>
                                     <constraint firstItem="XGC-js-2qA" firstAttribute="leading" secondItem="wAM-y1-Tjp" secondAttribute="leading" constant="12" id="A0a-QT-E5p"/>
@@ -206,14 +206,8 @@
         <image name=" More" width="24" height="24"/>
         <image name=" Share" width="24" height="24"/>
         <image name="icn_bookmark" width="24" height="24"/>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

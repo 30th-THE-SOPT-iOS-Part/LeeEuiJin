@@ -19,7 +19,53 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14o-qY-dLV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="77"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram%20Black%20Logo%403x" translatesAutoresizingMaskIntoConstraints="NO" id="zve-ay-1QC">
+                                        <rect key="frame" x="14" y="25" width="96" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="YN1-UE-GcC"/>
+                                            <constraint firstAttribute="width" constant="96" id="v8C-Z9-LLV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-sb-6a0">
+                                        <rect key="frame" x="376" y="25" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="KBD-7p-X7d"/>
+                                            <constraint firstAttribute="height" constant="24" id="TUu-xY-c1D"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image=" Share-1" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8d-fO-0pV">
+                                        <rect key="frame" x="336" y="25" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="k1j-W9-H06"/>
+                                            <constraint firstAttribute="height" constant="24" id="p9Z-e5-zv9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image=" Like" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6l-NV-ij9">
+                                        <rect key="frame" x="296" y="25" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Ehz-B1-qxV"/>
+                                            <constraint firstAttribute="width" constant="24" id="ycA-FH-qPK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icn_add" title=""/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="a8d-fO-0pV" firstAttribute="leading" secondItem="C6l-NV-ij9" secondAttribute="trailing" constant="16" id="4cj-u3-gkN"/>
+                                    <constraint firstItem="zve-ay-1QC" firstAttribute="leading" secondItem="14o-qY-dLV" secondAttribute="leading" constant="14" id="50Y-52-spF"/>
+                                    <constraint firstItem="0fb-sb-6a0" firstAttribute="leading" secondItem="a8d-fO-0pV" secondAttribute="trailing" constant="16" id="OLT-FW-dek"/>
+                                    <constraint firstAttribute="trailing" secondItem="0fb-sb-6a0" secondAttribute="trailing" constant="14" id="P6S-zS-izZ"/>
+                                    <constraint firstItem="zve-ay-1QC" firstAttribute="top" secondItem="14o-qY-dLV" secondAttribute="top" constant="25" id="PKd-HE-2Ii"/>
+                                    <constraint firstItem="C6l-NV-ij9" firstAttribute="top" secondItem="14o-qY-dLV" secondAttribute="top" constant="25" id="XHR-j0-jY3"/>
+                                    <constraint firstItem="0fb-sb-6a0" firstAttribute="top" secondItem="14o-qY-dLV" secondAttribute="top" constant="25" id="m6H-Pl-6ID"/>
+                                    <constraint firstItem="a8d-fO-0pV" firstAttribute="top" secondItem="14o-qY-dLV" secondAttribute="top" constant="25" id="mcg-g9-xPF"/>
+                                </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-Ib-unq">
                                 <rect key="frame" x="0.0" y="121" width="414" height="1266"/>
@@ -28,8 +74,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1284"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-tm-wPI">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
-                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wOt-zu-XJE">
                                                     <size key="itemSize" width="83" height="71"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,7 +84,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="g3g-c6-zNY">
-                                                        <rect key="frame" x="0.0" y="6.5" width="83" height="71"/>
+                                                        <rect key="frame" x="0.0" y="6" width="83" height="71"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zYj-IM-pCT">
                                                             <rect key="frame" x="0.0" y="0.0" width="83" height="71"/>
@@ -48,7 +94,7 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mth-6A-Hew">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mth-6A-Hew">
                                                 <rect key="frame" x="0.0" y="84" width="414" height="1200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -56,12 +102,12 @@
                                                 </constraints>
                                             </tableView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Mth-6A-Hew" secondAttribute="trailing" id="1Hm-C3-FhT"/>
                                             <constraint firstItem="Mth-6A-Hew" firstAttribute="leading" secondItem="XHg-q5-k7G" secondAttribute="leading" id="9dl-uP-hV9"/>
                                             <constraint firstAttribute="bottom" secondItem="Mth-6A-Hew" secondAttribute="bottom" id="WtE-FV-JU6"/>
-                                            <constraint firstItem="Mth-6A-Hew" firstAttribute="top" secondItem="vGZ-tm-wPI" secondAttribute="bottom" id="gsx-5M-J0U"/>
+                                            <constraint firstItem="Mth-6A-Hew" firstAttribute="top" secondItem="vGZ-tm-wPI" secondAttribute="bottom" constant="1" id="gsx-5M-J0U"/>
                                             <constraint firstAttribute="trailing" secondItem="vGZ-tm-wPI" secondAttribute="trailing" id="m5g-Ho-D0Y"/>
                                             <constraint firstItem="vGZ-tm-wPI" firstAttribute="top" secondItem="XHg-q5-k7G" secondAttribute="top" id="vMY-q1-bZh"/>
                                             <constraint firstAttribute="height" constant="1284" id="vST-P4-9fw"/>
@@ -108,19 +154,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name=" Like" width="24" height="24"/>
+        <image name=" Share-1" width="24" height="24"/>
+        <image name="Instagram%20Black%20Logo%403x" width="525" height="150"/>
+        <image name="icn_add" width="24" height="24"/>
         <image name="icn_home" width="24" height="24"/>
         <image name="icn_home_selected" width="24" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
