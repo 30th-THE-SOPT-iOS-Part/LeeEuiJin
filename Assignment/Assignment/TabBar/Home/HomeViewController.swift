@@ -9,24 +9,29 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    //MARK: @IBOutlet
+//MARK: @IBOutlet
     
     @IBOutlet weak var storyCollectionView: UICollectionView!
+    @IBOutlet weak var feedTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cellRegister()
-        
-        
-
+        storyCellRegister()
+        feedCellRegister()
     }
     
-    private func cellRegister(){
+    private func storyCellRegister(){
         let nib = UINib(nibName: StoryCollectionViewCell.identifier, bundle: nil)
         storyCollectionView.register(nib, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
-        
         storyCollectionView.delegate = self
         storyCollectionView.dataSource = self
+    }
+    
+    private func feedCellRegister(){
+        let nib = UINib(nibName: FeedTableViewCell.identifier, bundle: nil)
+        feedTableView.register(nib, forCellReuseIdentifier: FeedTableViewCell.identifier)
+        feedTableView.delegate = self
+        feedTableView.dataSource = self
     }
 }
 
@@ -63,3 +68,27 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout{
         return 1
     }
 }
+
+
+extension HomeViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 488
+    }
+    
+}
+
+extension HomeViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return FeedDataModel.sampleData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else {return UITableViewCell()}
+        cell.setData(FeedDataModel.sampleData[indexPath.row])
+        return cell
+    }
+    
+    
+}
+
