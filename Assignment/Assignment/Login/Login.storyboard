@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3om-tl-5e7">
-                                <rect key="frame" x="92.000000000000014" y="99" width="206.33333333333337" height="34"/>
+                                <rect key="frame" x="92.000000000000014" y="94" width="206.33333333333337" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -178,16 +178,16 @@
                         <viewLayoutGuide key="safeArea" id="P4O-Tu-3c9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5PL-cq-GeI" firstAttribute="leading" secondItem="P4O-Tu-3c9" secondAttribute="leading" constant="16" id="36w-oP-UFq"/>
-                            <constraint firstItem="3om-tl-5e7" firstAttribute="top" secondItem="P4O-Tu-3c9" secondAttribute="top" constant="55" id="9OM-bd-QS4"/>
-                            <constraint firstItem="5PL-cq-GeI" firstAttribute="top" secondItem="vno-oy-UPB" secondAttribute="bottom" constant="22" id="9Oh-3n-9VN"/>
-                            <constraint firstItem="P4O-Tu-3c9" firstAttribute="trailing" secondItem="vno-oy-UPB" secondAttribute="trailing" constant="16" id="9PD-hN-WVa"/>
-                            <constraint firstItem="P4O-Tu-3c9" firstAttribute="trailing" secondItem="5PL-cq-GeI" secondAttribute="trailing" constant="16" id="CUN-0e-Eqv"/>
-                            <constraint firstItem="3om-tl-5e7" firstAttribute="centerX" secondItem="383-FU-6Jr" secondAttribute="centerX" id="YdN-L3-dM9"/>
-                            <constraint firstItem="FbQ-PJ-x0B" firstAttribute="top" secondItem="3om-tl-5e7" secondAttribute="bottom" constant="11" id="bh8-sc-PTm"/>
-                            <constraint firstItem="vno-oy-UPB" firstAttribute="top" secondItem="FbQ-PJ-x0B" secondAttribute="bottom" constant="22" id="c34-Xh-d5i"/>
-                            <constraint firstItem="FbQ-PJ-x0B" firstAttribute="centerX" secondItem="383-FU-6Jr" secondAttribute="centerX" id="j9m-Sc-hTQ"/>
-                            <constraint firstItem="vno-oy-UPB" firstAttribute="leading" secondItem="P4O-Tu-3c9" secondAttribute="leading" constant="16" id="nnk-C6-jId"/>
+                            <constraint firstItem="P4O-Tu-3c9" firstAttribute="trailing" secondItem="vno-oy-UPB" secondAttribute="trailing" constant="16" id="6nU-T8-gEt"/>
+                            <constraint firstItem="vno-oy-UPB" firstAttribute="leading" secondItem="P4O-Tu-3c9" secondAttribute="leading" constant="16" id="BdM-EN-qtQ"/>
+                            <constraint firstItem="vno-oy-UPB" firstAttribute="top" secondItem="FbQ-PJ-x0B" secondAttribute="bottom" constant="22" id="DxP-Xg-pH9"/>
+                            <constraint firstItem="5PL-cq-GeI" firstAttribute="top" secondItem="vno-oy-UPB" secondAttribute="bottom" constant="22" id="Ms8-8d-15T"/>
+                            <constraint firstItem="3om-tl-5e7" firstAttribute="top" secondItem="P4O-Tu-3c9" secondAttribute="top" constant="50" id="aZ8-lU-5Qm"/>
+                            <constraint firstItem="3om-tl-5e7" firstAttribute="centerX" secondItem="383-FU-6Jr" secondAttribute="centerX" id="bDz-c3-i94"/>
+                            <constraint firstItem="P4O-Tu-3c9" firstAttribute="trailing" secondItem="5PL-cq-GeI" secondAttribute="trailing" constant="16" id="cbZ-rI-mM0"/>
+                            <constraint firstItem="FbQ-PJ-x0B" firstAttribute="top" secondItem="3om-tl-5e7" secondAttribute="bottom" constant="16" id="gCt-Vx-jbK"/>
+                            <constraint firstItem="5PL-cq-GeI" firstAttribute="leading" secondItem="P4O-Tu-3c9" secondAttribute="leading" constant="16" id="hHU-8j-bLW"/>
+                            <constraint firstItem="FbQ-PJ-x0B" firstAttribute="centerX" secondItem="383-FU-6Jr" secondAttribute="centerX" id="o2z-ma-yJJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q06-gq-UdP"/>
