@@ -38,7 +38,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         nextVC.modalPresentationStyle = .pageSheet
         nextVC.modalTransitionStyle = .crossDissolve
-        nextVC.message2 = loginEmail.text
+        nextVC.userName = loginEmail.text
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     

@@ -38,7 +38,7 @@ class UserNameViewController: UIViewController {
     // MARK: - @IBAction
     @IBAction func tabToPassword(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as? PasswordViewController else {return}
-        nextVC.message1 = userName.text
+        nextVC.userName = userName.text
         self.navigationController?.pushViewController(nextVC, animated: true)
         
     }

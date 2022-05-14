@@ -12,7 +12,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var welcomeMessage: UILabel!
     
     // MARK: - Properties
-    var message2: String?
+    var userName: String?
     var password: String?
     var isSignUp: Bool = false
     
@@ -25,8 +25,8 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - UI
     private func setUpMessage(){
-        if let message2 = message2 {
-            welcomeMessage.text = message2 + "님, Instagram에\n오신 것을 환영합니다"
+        if let userName = userName {
+            welcomeMessage.text = userName + "님, Instagram에\n오신 것을 환영합니다"
             welcomeMessage.sizeToFit()
             welcomeMessage.textAlignment = .center
             welcomeMessage.center.x = self.view.center.x
@@ -65,8 +65,8 @@ class WelcomeViewController: UIViewController {
 // MARK: - Network
 extension WelcomeViewController{
     func signup(){
-        guard let name = self.message2 else { return }
-        guard let email = self.message2 else { return }
+        guard let name = self.userName else { return }
+        guard let email = self.userName else { return }
         guard let password = self.password else { return }
         
         UserService.shared.signup(name: name, email: email, password: password){ response in

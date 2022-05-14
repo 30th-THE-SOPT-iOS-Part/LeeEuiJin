@@ -113,7 +113,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9B52861D2811B6E100B91CE3 /* Login */ = {
+		9B52861D2811B6E100B91CE3 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				9B3686772811E12900D0AD10 /* Login.storyboard */,
@@ -124,7 +124,7 @@
 				9B61534B2811F889007794E6 /* UserNameViewController.swift */,
 				9B61534E2811F889007794E6 /* WelcomeViewController.swift */,
 			);
-			path = Login;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		9B52861E2811B9E500B91CE3 /* Global */ = {
@@ -239,7 +239,7 @@
 				9B5F64302821667F001513B2 /* temp */,
 				9B6153452811F6B3007794E6 /* TabBar */,
 				9B52861E2811B9E500B91CE3 /* Global */,
-				9B52861D2811B6E100B91CE3 /* Login */,
+				9B52861D2811B6E100B91CE3 /* Auth */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
