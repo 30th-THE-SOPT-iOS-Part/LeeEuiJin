@@ -42,11 +42,14 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func tabFinalBtn(_ sender: Any) {
+        
         let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
         guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
         guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
         delegate.window?.rootViewController = nextVC
         // 여기에서 애니메이션을 주고 싶은데 어떻게 넣지.... ㅠㅠ
     }
+    
 }
+
 
