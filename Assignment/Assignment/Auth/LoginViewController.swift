@@ -35,11 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: - @IBAction
     @IBAction func tabLoginBtn(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
-        nextVC.modalPresentationStyle = .pageSheet
-        nextVC.modalTransitionStyle = .crossDissolve
-        nextVC.userName = loginEmail.text
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        login()
     }
     
     @IBAction func tabSignUpBtn(_ sender: Any) {
@@ -70,6 +66,43 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             loginBtn.isEnabled = false
         }
       }
+  
+    
+    private func makeAlert(_ message : String){
+        let alertViewController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인",style: .default){ action in
+            let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
+            guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
+            guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
+            delegate.window?.rootViewController = nextVC
+            }
+
+        alertViewController.addAction(okAction)
+        present(alertViewController, animated: true)
+    }
+}
+
+
+// MARK: - Network
+extension LoginViewController{
+    func login(){
+        guard let name = loginEmail.text else { return }
+        guard let email = loginEmail.text else { return }
+        guard let password = loginPassword.text else { return }
+        
+        UserService.shared.login(name: name, email: email, password: password){ response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? LoginResponse else { return }
+                print(data)
+                self.makeAlert("로그인 되었습니다!")
+                
+            default:
+                print(response)
+                return
+            }
+        }
+    }
 }
     
 
