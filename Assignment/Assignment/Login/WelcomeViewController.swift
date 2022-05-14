@@ -13,6 +13,7 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - Properties
     var message2: String?
+    var password: String?
     var isSignUp: Bool = false
     
     // MARK: - LifeCycle
@@ -42,14 +43,45 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func tabFinalBtn(_ sender: Any) {
-        
-        let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
-        guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
-        guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
-        delegate.window?.rootViewController = nextVC
-        // 여기에서 애니메이션을 주고 싶은데 어떻게 넣지.... ㅠㅠ
+        signup()
     }
     
+    // MARK: - Custom Methods
+    
+    private func makeAlert(_ message : String){
+        let alertViewController = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인",style: .default){ action in
+            self.dismiss(animated: true){
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
+        alertViewController.addAction(okAction)
+        present(alertViewController, animated: true)
+    }
+    
+    
+    
+}
+// MARK: - Network
+extension WelcomeViewController{
+    func signup(){
+        guard let name = self.message2 else { return }
+        guard let email = self.message2 else { return }
+        guard let password = self.password else { return }
+        
+        UserService.shared.signup(name: name, email: email, password: password){ response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? SignUpResponse else { return }
+                print(data)
+                self.makeAlert("회원가입 완료")
+                
+            default:
+                print(response)
+                return
+            }
+        }
+    }
 }
 
 

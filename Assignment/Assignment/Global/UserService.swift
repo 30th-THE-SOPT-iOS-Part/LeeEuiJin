@@ -13,7 +13,7 @@ class UserService{
     private init() {}
    
     //MARK: - Request Methods
-    func signUp(name:String, email: String, password : String, completion : @escaping (NetworkResult<Any>) -> Void){
+    func signup(name:String, email: String, password : String, completion : @escaping (NetworkResult<Any>) -> Void){
         let url = APIConstants.signUpURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body : Parameters = [
@@ -29,7 +29,7 @@ class UserService{
             case .success:
                 guard let statusCode = response.response?.statusCode else {return}
                 guard let value = response.value else {return}
-                let networkResult = self.judgeStatus(what : "signUp", by: statusCode, value)
+                let networkResult = self.judgeStatus(what : "signup", by: statusCode, value)
                 completion(networkResult)
                 
             case .failure:
@@ -39,7 +39,7 @@ class UserService{
     }
     
     func login(name:String, email: String, password : String, completion : @escaping (NetworkResult<Any>) -> Void){
-        let url = APIConstants.signUpURL
+        let url = APIConstants.loginURL
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         let body : Parameters = [
             "name" : name,
@@ -54,7 +54,7 @@ class UserService{
             case .success:
                 guard let statusCode = response.response?.statusCode else {return}
                 guard let value = response.value else {return}
-                let networkResult = self.judgeStatus(what : "Login", by: statusCode, value)
+                let networkResult = self.judgeStatus(what : "login", by: statusCode, value)
                 completion(networkResult)
                 
             case .failure:
@@ -66,24 +66,24 @@ class UserService{
     private func judgeStatus(what request : String, by statusCode : Int, _ data : Data) -> NetworkResult<Any>{
         let decoder = JSONDecoder()
         
-        if request == "SignUp" {
+        if request == "signup" {
             guard let decodedData = try? decoder.decode(SignUpResponse.self, from: data)
             else {return .pathErr}
             
             switch statusCode{
-            case 200...201: return .success(decodedData.data as Any)
+            case 200...201: return .success(decodedData as Any)
             case 400...409: return .requestErr(decodedData.message)
             case 500: return .serverErr
             default : return .networkFail
             }
         }
-        else if request == "Login"{
+        else if request == "login"{
                 guard let decodedData = try? decoder.decode(LoginResponse.self, from: data)
                 else {return .pathErr}
                 
                 switch statusCode{
-                case 200...201: return .success(decodedData.data as Any)
-                case 400...409: return .requestErr(decodedData.message)
+                case 200...201: return .success(decodedData as Any)
+                case 400...410: return .requestErr(decodedData.message)
                 case 500: return .serverErr
                 default : return .networkFail
             }

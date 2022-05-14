@@ -40,6 +40,7 @@ class PasswordViewController: UIViewController {
         guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         if let message1 = message1{
             nextVC2.message2 = message1
+            nextVC2.password = userPassword.text
             nextVC2.isSignUp = true
         }
         nextVC2.modalPresentationStyle = .pageSheet
