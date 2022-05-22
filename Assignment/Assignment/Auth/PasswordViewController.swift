@@ -37,21 +37,21 @@ class PasswordViewController: UIViewController {
     
     //MARK: - @IBAction
     @IBAction func tabNextBtn(_ sender: Any) {
-        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
+        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
         if let userName = userName{
-            nextVC2.userName = userName
-            nextVC2.password = userPassword.text
-            nextVC2.isSignUp = true
+            welcomeVC.userName = userName
+            welcomeVC.password = userPassword.text
+            welcomeVC.isSignUp = true
         }
-        nextVC2.modalPresentationStyle = .pageSheet
-        nextVC2.modalTransitionStyle = .crossDissolve
-        self.navigationController?.pushViewController(nextVC2, animated: true)
+        welcomeVC.modalPresentationStyle = .pageSheet
+        welcomeVC.modalTransitionStyle = .crossDissolve
+        self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
     
     //MARK: - Custom Methods
     /// Password TextField가 Fiiled 되면 버튼 활성화하는 메서드
     @objc func textFieldDidChange(_ sender: Any?) {
-           if userPassword.hasText == true {
+           if userPassword.hasText {
                  nextBtn.isEnabled = true
                } else {
                nextBtn.isEnabled = false
