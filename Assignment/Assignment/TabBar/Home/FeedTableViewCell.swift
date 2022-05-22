@@ -19,9 +19,6 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var feedImage: UIImageView!
     @IBOutlet weak var likeBtn: UIButton!
-    @IBOutlet weak var commentBtn: UIButton!
-    @IBOutlet weak var shareBtn: UIButton!
-    @IBOutlet weak var bookmarkBtn: UIButton!
     @IBOutlet weak var feedContents: UILabel!
     @IBOutlet weak var theNumberOfLikes: UILabel!
     @IBOutlet weak var userIDLower: UILabel!

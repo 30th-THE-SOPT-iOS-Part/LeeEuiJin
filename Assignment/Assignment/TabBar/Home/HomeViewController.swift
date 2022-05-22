@@ -37,10 +37,6 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController:UICollectionViewDelegate{
-    
-}
-
 extension HomeViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return StoryDataModel.sampleData.count
@@ -64,13 +60,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout{
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
-
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
 }
-
 
 extension HomeViewController: UITableViewDelegate{
  
@@ -87,7 +80,5 @@ extension HomeViewController: UITableViewDataSource{
         cell.setData(FeedDataModel.sampleData[indexPath.row])
         return cell
     }
-    
-    
 }
 
