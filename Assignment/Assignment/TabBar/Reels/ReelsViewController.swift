@@ -14,4 +14,13 @@ class ReelsViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        //reelsTabSelected()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        //reelsTabUnselected()
+    }
+    
+
 }

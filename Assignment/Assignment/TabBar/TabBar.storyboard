@@ -9,15 +9,16 @@
         <!--TabBarController-->
         <scene sceneID="Rgo-7C-35c">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Grr-gA-paj" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Grr-gA-paj" customClass="TabBarController" customModule="Assignment_Week1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7jh-7K-W95"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="J4x-eI-664">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="TabBar" destination="J4x-eI-664" id="E6S-Ej-pwF"/>
                         <segue destination="fGX-5P-pRp" kind="relationship" relationship="viewControllers" id="b7a-jQ-1La"/>
                         <segue destination="2VJ-6n-cun" kind="relationship" relationship="viewControllers" id="RCf-Sn-ynE"/>
                         <segue destination="33s-W5-Upo" kind="relationship" relationship="viewControllers" id="szu-RI-9V3"/>

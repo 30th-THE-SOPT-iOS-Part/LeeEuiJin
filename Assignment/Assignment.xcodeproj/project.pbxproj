@@ -33,6 +33,7 @@
 		9BA9995228249B8300989806 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9995128249B8300989806 /* StoryData.swift */; };
 		9BA999592824D10800989806 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA999572824D10800989806 /* FeedTableViewCell.swift */; };
 		9BA9995A2824D10800989806 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA999582824D10800989806 /* FeedTableViewCell.xib */; };
+		9BC09604283A729A007D67D8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC09603283A729A007D67D8 /* TabBarController.swift */; };
 		9BE3BCD5283013220085ABF0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3BCD4283013220085ABF0 /* APIConstants.swift */; };
 		9BE3BCD7283013F20085ABF0 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3BCD6283013F20085ABF0 /* NetworkResult.swift */; };
 		9BE3BCD92830145D0085ABF0 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE3BCD82830145D0085ABF0 /* SignUpModel.swift */; };
@@ -71,6 +72,7 @@
 		9BA9995128249B8300989806 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
 		9BA999572824D10800989806 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		9BA999582824D10800989806 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		9BC09603283A729A007D67D8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9BE3BCD4283013220085ABF0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		9BE3BCD6283013F20085ABF0 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		9BE3BCD82830145D0085ABF0 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				9B6153472811F6C5007794E6 /* Search */,
 				9B6153462811F6C0007794E6 /* Home */,
 				9B6153672811FAE7007794E6 /* TabBar.storyboard */,
+				9BC09603283A729A007D67D8 /* TabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				9BE3BCD5283013220085ABF0 /* APIConstants.swift in Sources */,
 				9BE3BCD7283013F20085ABF0 /* NetworkResult.swift in Sources */,
 				9B6153502811F889007794E6 /* PasswordViewController.swift in Sources */,
+				9BC09604283A729A007D67D8 /* TabBarController.swift in Sources */,
 				9BE3BCDB283015150085ABF0 /* LoginModel.swift in Sources */,
 				9B61535A2811FA60007794E6 /* SearchViewController.swift in Sources */,
 				9BA999592824D10800989806 /* FeedTableViewCell.swift in Sources */,
