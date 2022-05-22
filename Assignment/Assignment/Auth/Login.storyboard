@@ -312,7 +312,6 @@
                             <constraint firstItem="Njg-1G-0e2" firstAttribute="trailing" secondItem="uKi-DS-WLr" secondAttribute="trailing" constant="1" id="e3v-JQ-ryY"/>
                             <constraint firstItem="uKi-DS-WLr" firstAttribute="leading" secondItem="Njg-1G-0e2" secondAttribute="leading" constant="1" id="mLD-Bw-JtK"/>
                             <constraint firstItem="3CX-Mq-j4F" firstAttribute="top" secondItem="uKi-DS-WLr" secondAttribute="bottom" constant="23" id="nLP-nd-Ty2"/>
-                            <constraint firstItem="3CX-Mq-j4F" firstAttribute="leading" secondItem="Njg-1G-0e2" secondAttribute="leading" constant="46.329999999999998" id="pSo-aX-asc"/>
                             <constraint firstItem="Njg-1G-0e2" firstAttribute="trailing" secondItem="p78-FO-fPg" secondAttribute="trailing" constant="37" id="zwo-Hh-fHb"/>
                         </constraints>
                     </view>

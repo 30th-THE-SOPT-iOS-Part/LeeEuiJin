@@ -15,14 +15,17 @@ class FeedTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var userIDUpper: UILabel!
-    @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var feedImage: UIImageView!
-    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var feedContents: UILabel!
     @IBOutlet weak var theNumberOfLikes: UILabel!
     @IBOutlet weak var userIDLower: UILabel!
     @IBOutlet weak var moreComments: UILabel!
+    @IBOutlet weak var likeBtn: UIButton!
+    
+    var delegate: FeedTableViewCellDelegate?
+    var isLiked : Bool = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -42,6 +45,20 @@ class FeedTableViewCell: UITableViewCell {
         feedContents.text = feedData.feedContents
         userIDLower.text = feedData.userID
         theNumberOfLikes.text = "좋아요 \(feedData.likeCount)개"
+    }
+    
+    @IBAction func tabLikeBtn(_ sender: UIButton) {
+        if self.isLiked{
+            likeBtn.setImage(UIImage(named: "Like_1"), for: .normal)
+        }
+        
+        else {
+            likeBtn.setImage(UIImage(named: "icn_like"), for: .normal)
+        }
+        self.delegate?.tabLikeBtn(isLiked : self.isLiked, tag : self.tag)
+        self.isLiked = !self.isLiked
+        self.setData(FeedDataModel.sampleData[self.tag])
+        
     }
     
 }

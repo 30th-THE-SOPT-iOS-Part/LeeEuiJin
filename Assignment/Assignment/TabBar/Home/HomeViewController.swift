@@ -78,7 +78,22 @@ extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else {return UITableViewCell()}
         cell.setData(FeedDataModel.sampleData[indexPath.row])
+        cell.delegate = self
+        cell.tag = indexPath.row
         return cell
     }
 }
 
+protocol FeedTableViewCellDelegate{
+    func tabLikeBtn(isLiked : Bool, tag : Int)
+}
+extension HomeViewController : FeedTableViewCellDelegate{
+    func tabLikeBtn(isLiked : Bool, tag : Int) {
+        if isLiked{
+            FeedDataModel.sampleData[tag].likeCount -= 1
+        }
+        else{
+            FeedDataModel.sampleData[tag].likeCount += 1
+        }
+    }
+}

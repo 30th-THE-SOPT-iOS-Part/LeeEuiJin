@@ -76,7 +76,10 @@
                                             <constraint firstAttribute="height" constant="24" id="Vte-mx-DMU"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image=" Like" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Like_1" title=""/>
+                                        <connections>
+                                            <action selector="tabLikeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gge-D7-lqh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-cD-Dpv">
                                         <rect key="frame" x="44" y="8" width="24" height="24"/>
@@ -106,7 +109,6 @@
                                         <buttonConfiguration key="configuration" style="plain" image="icn_bookmark" title=""/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="XlY-cD-Dpv" firstAttribute="leading" secondItem="6TL-PN-t16" secondAttribute="trailing" constant="10" id="7GG-kf-s93"/>
                                     <constraint firstAttribute="height" constant="40" id="CCd-Is-jyb"/>
@@ -189,15 +191,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bookmarkBtn" destination="y2s-Kc-eaN" id="dpz-TK-BOC"/>
-                <outlet property="commentBtn" destination="XlY-cD-Dpv" id="dEm-nK-13I"/>
                 <outlet property="feedContents" destination="f2v-uz-50c" id="uXG-yr-m3r"/>
                 <outlet property="feedImage" destination="2XU-aX-vKE" id="Stu-4w-f5w"/>
-                <outlet property="likeBtn" destination="6TL-PN-t16" id="Yoq-4p-KMf"/>
-                <outlet property="moreBtn" destination="SGu-zf-DOY" id="dbb-65-FYS"/>
+                <outlet property="likeBtn" destination="6TL-PN-t16" id="DZS-wl-NLq"/>
                 <outlet property="moreComments" destination="EI0-jP-Rsp" id="AzB-kS-EfQ"/>
                 <outlet property="profileImage" destination="x83-mX-0qi" id="jQb-DC-qha"/>
-                <outlet property="shareBtn" destination="Ugb-rS-LNx" id="Zjt-7X-edr"/>
                 <outlet property="theNumberOfLikes" destination="eTI-3r-Nwz" id="a3I-41-M2Q"/>
                 <outlet property="userIDLower" destination="XGC-js-2qA" id="amr-9P-QF6"/>
                 <outlet property="userIDUpper" destination="G1s-gX-J1V" id="qaa-dl-ky3"/>
@@ -207,9 +205,9 @@
     </objects>
     <resources>
         <image name=" Comment" width="24" height="24"/>
-        <image name=" Like" width="24" height="24"/>
         <image name=" More" width="24" height="24"/>
         <image name=" Share" width="24" height="24"/>
+        <image name="Like_1" width="24" height="24"/>
         <image name="icn_bookmark" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

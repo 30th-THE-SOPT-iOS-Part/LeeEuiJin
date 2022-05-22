@@ -18,7 +18,7 @@ struct FeedDataModel{
 }
 
 extension FeedDataModel{
-    static let sampleData :[FeedDataModel] = [
+    static var sampleData :[FeedDataModel] = [
     FeedDataModel(userID: "avatar1", profileImageName: "avatar1", feedImageName: "postImage1", likeCount: 330, feedContents: "왕초보라면 왕초보 스터디에 오라", commentCount: 19),
     FeedDataModel(userID: "avatar2", profileImageName: "avatar2", feedImageName: "postImage2", likeCount: 220, feedContents: "술을 먹고 싶다면 전통주 스터디에 오라", commentCount: 30),
     FeedDataModel(userID: "avatar3", profileImageName: "avatar3", feedImageName: "postImage3", likeCount: 312, feedContents: "구르고 싶다면 데굴데굴 볼링 스터디에 오라", commentCount: 35),
