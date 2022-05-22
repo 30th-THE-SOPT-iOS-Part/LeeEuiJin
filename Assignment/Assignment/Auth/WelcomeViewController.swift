@@ -28,8 +28,7 @@ class WelcomeViewController: UIViewController {
         if let userName = userName {
             welcomeMessage.text = userName + "님, Instagram에\n오신 것을 환영합니다"
             welcomeMessage.sizeToFit()
-            welcomeMessage.textAlignment = .center
-            welcomeMessage.center.x = self.view.center.x
+        
         }
     }
     
@@ -66,10 +65,9 @@ class WelcomeViewController: UIViewController {
 extension WelcomeViewController{
     func signup(){
         guard let name = self.userName else { return }
-        guard let email = self.userName else { return }
         guard let password = self.password else { return }
         
-        UserService.shared.signup(name: name, email: email, password: password){ response in
+        UserService.shared.signup(name: name, email: name, password: password){ response in
             switch response {
             case .success(let data):
                 guard let data = data as? SignUpResponse else { return }
