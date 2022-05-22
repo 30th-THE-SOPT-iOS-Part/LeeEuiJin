@@ -38,7 +38,9 @@ class FeedTableViewCell: UITableViewCell {
     func setData(_ feedData: FeedDataModel){
         userIDUpper.text = feedData.userID
         profileImage.image = UIImage(named: feedData.profileImageName)
-        feedImage.image = UIImage(named: feedData.feedImageName)
+     
+        //feedImage.image = UIImage(named: feedData.feedImageName)
+        feedImage.loadImage(url: URL(string : "https://picsum.photos/id/237/200/200")!)
         moreComments.text = "댓글 \(feedData.commentCount)개 모두 보기"
         feedContents.text = feedData.feedContents
         userIDLower.text = feedData.userID

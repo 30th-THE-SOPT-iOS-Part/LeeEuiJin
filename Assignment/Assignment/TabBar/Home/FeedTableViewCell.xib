@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="488" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="Assignment_Week1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="534" id="KGk-i7-Jjw" customClass="FeedTableViewCell" customModule="Assignment_Week1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="534"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="534"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-s3-YIN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="489"/>
+                    <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4nl-s3-YIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="533"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHv-pS-4pe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
@@ -61,13 +61,13 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-aX-vKE">
-                                <rect key="frame" x="0.0" y="46" width="375" height="340"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="375"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="340" id="XLb-nI-YwI"/>
+                                    <constraint firstAttribute="width" secondItem="2XU-aX-vKE" secondAttribute="height" multiplier="1:1" id="6pG-ce-2m6"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0j-rc-bNZ">
-                                <rect key="frame" x="0.0" y="386" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="427" width="375" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TL-PN-t16">
                                         <rect key="frame" x="10" y="8" width="24" height="24"/>
@@ -120,7 +120,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAM-y1-Tjp">
-                                <rect key="frame" x="0.0" y="426" width="375" height="63"/>
+                                <rect key="frame" x="0.0" y="470" width="375" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-3r-Nwz">
                                         <rect key="frame" x="12" y="6" width="200" height="18"/>
@@ -173,13 +173,18 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="2XU-aX-vKE" firstAttribute="leading" secondItem="4nl-s3-YIN" secondAttribute="leading" id="Ceh-zf-54G"/>
+                            <constraint firstAttribute="trailing" secondItem="2XU-aX-vKE" secondAttribute="trailing" id="Emj-Ie-EWC"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="4nl-s3-YIN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OmN-yW-ovG"/>
                     <constraint firstAttribute="trailing" secondItem="4nl-s3-YIN" secondAttribute="trailing" id="Ur7-dm-cvw"/>
-                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="4nl-s3-YIN" secondAttribute="bottom" id="a6b-UV-6c3"/>
                     <constraint firstItem="4nl-s3-YIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hE2-ru-WxJ"/>
+                    <constraint firstAttribute="bottom" secondItem="4nl-s3-YIN" secondAttribute="bottom" constant="1" id="rBt-PC-gtV"/>
+                    <constraint firstItem="4nl-s3-YIN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yWn-Qp-m2a"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -197,7 +202,7 @@
                 <outlet property="userIDLower" destination="XGC-js-2qA" id="amr-9P-QF6"/>
                 <outlet property="userIDUpper" destination="G1s-gX-J1V" id="qaa-dl-ky3"/>
             </connections>
-            <point key="canvasLocation" x="177.536231884058" y="263.16964285714283"/>
+            <point key="canvasLocation" x="177.536231884058" y="235.04464285714283"/>
         </tableViewCell>
     </objects>
     <resources>

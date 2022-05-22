@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64A9A30B33EE595D52E84017 /* Pods_Assignment_Week1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2412E1B6AD997B7721D9CFCE /* Pods_Assignment_Week1.framework */; };
+		9B0B3F47283A17570012A279 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3F46283A17570012A279 /* Extensions.swift */; };
 		9B36867C2811E12900D0AD10 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3686772811E12900D0AD10 /* Login.storyboard */; };
 		9B5F643228216693001513B2 /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5F643128216693001513B2 /* temp.storyboard */; };
 		9B5F6434282166A9001513B2 /* tempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F6433282166A9001513B2 /* tempViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		2412E1B6AD997B7721D9CFCE /* Pods_Assignment_Week1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment_Week1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0B3F46283A17570012A279 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9B3686772811E12900D0AD10 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9B5F643128216693001513B2 /* temp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
 		9B5F6433282166A9001513B2 /* tempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				9BEE4B1027FF1FB20036280A /* SceneDelegate.swift */,
 				9BEE4B1727FF1FB70036280A /* Assets.xcassets */,
 				9BEE4B1927FF1FB70036280A /* LaunchScreen.storyboard */,
+				9B0B3F46283A17570012A279 /* Extensions.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				9B61535A2811FA60007794E6 /* SearchViewController.swift in Sources */,
 				9BA999592824D10800989806 /* FeedTableViewCell.swift in Sources */,
 				9B61534F2811F889007794E6 /* UserNameViewController.swift in Sources */,
+				9B0B3F47283A17570012A279 /* Extensions.swift in Sources */,
 				9BA9995228249B8300989806 /* StoryData.swift in Sources */,
 				9B80FC272824EB3D0076C975 /* FeedData.swift in Sources */,
 				9B6153622811FAA0007794E6 /* ShoppingViewController.swift in Sources */,
