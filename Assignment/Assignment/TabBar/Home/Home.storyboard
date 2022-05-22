@@ -146,6 +146,7 @@
                     <connections>
                         <outlet property="feedTableView" destination="Mth-6A-Hew" id="LUK-PM-ruL"/>
                         <outlet property="storyCollectionView" destination="vGZ-tm-wPI" id="BET-aj-7hY"/>
+                        <outlet property="tableView" destination="Mth-6A-Hew" id="Foz-lf-4An"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

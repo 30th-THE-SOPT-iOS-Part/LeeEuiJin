@@ -13,11 +13,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var storyCollectionView: UICollectionView!
     @IBOutlet weak var feedTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         storyCellRegister()
         feedCellRegister()
+        self.tableView.rowHeight  = UITableView.automaticDimension
     }
     
     private func storyCellRegister(){
@@ -71,10 +73,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout{
 
 
 extension HomeViewController: UITableViewDelegate{
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 488
-    }
+ 
     
 }
 

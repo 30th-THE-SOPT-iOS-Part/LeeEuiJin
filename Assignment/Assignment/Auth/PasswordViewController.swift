@@ -14,7 +14,7 @@ class PasswordViewController: UIViewController {
     @IBOutlet weak var userPassword: UITextField!
     
     // MARK: - Properties
-    var message1 :String?
+    var userName :String?
     
     
     // MARK: - LifeCycle
@@ -38,8 +38,9 @@ class PasswordViewController: UIViewController {
     //MARK: - @IBAction
     @IBAction func tabNextBtn(_ sender: Any) {
         guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else {return}
-        if let message1 = message1{
-            nextVC2.message2 = message1
+        if let userName = userName{
+            nextVC2.userName = userName
+            nextVC2.password = userPassword.text
             nextVC2.isSignUp = true
         }
         nextVC2.modalPresentationStyle = .pageSheet
