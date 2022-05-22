@@ -59,7 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     /// 이메일 textField와 비밀번호 textField가 Filled되면 버튼 활성화 되는 메서드
     @objc func textFieldDidChange(_ sender: Any?) {
-        if loginEmail.hasText == true && loginPassword.hasText == true {
+        if loginEmail.hasText && loginPassword.hasText {
               loginBtn.isEnabled = true
             
             } else {
@@ -73,8 +73,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let okAction = UIAlertAction(title: "확인",style: .default){ action in
             let storyboard = UIStoryboard(name: "TabBar", bundle: Bundle.main)
             guard let nextVC = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? UITabBarController else {return}
-            guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
-            delegate.window?.rootViewController = nextVC
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first else {return}
+            window.rootViewController = nextVC
+            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {}, completion: nil)
+            windowScene.windows.first?.makeKeyAndVisible()
             }
 
         alertViewController.addAction(okAction)
