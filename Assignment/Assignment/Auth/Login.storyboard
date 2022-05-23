@@ -49,18 +49,6 @@
                                     <constraint firstAttribute="height" constant="103" id="pJJ-SZ-i30"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIB-Of-Pj3">
-                                <rect key="frame" x="337" y="357" width="44" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="jYu-gv-9i1"/>
-                                    <constraint firstAttribute="height" constant="34" id="khc-qg-D7a"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="password_hidden" title=""/>
-                                <connections>
-                                    <action selector="tabPasswordBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8g-M6-BvW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEo-lo-cff">
                                 <rect key="frame" x="7" y="399" width="147" height="30"/>
                                 <constraints>
@@ -97,13 +85,11 @@
                         <constraints>
                             <constraint firstItem="Bw9-GG-LO6" firstAttribute="top" secondItem="ae2-lF-xKw" secondAttribute="bottom" constant="19" id="3Or-ON-KqF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ae2-lF-xKw" secondAttribute="trailing" constant="16" id="3wj-rG-3a8"/>
-                            <constraint firstItem="YIB-Of-Pj3" firstAttribute="top" secondItem="Xzt-eJ-qIx" secondAttribute="bottom" constant="19" id="6BB-Uz-rEt"/>
                             <constraint firstItem="ae2-lF-xKw" firstAttribute="top" secondItem="XEo-lo-cff" secondAttribute="bottom" constant="19" id="BiJ-Wv-HaT"/>
                             <constraint firstItem="Xzt-eJ-qIx" firstAttribute="leading" secondItem="Ukp-Nh-8es" secondAttribute="leading" id="Bm4-8H-8B5"/>
                             <constraint firstItem="Xzt-eJ-qIx" firstAttribute="trailing" secondItem="Ukp-Nh-8es" secondAttribute="trailing" id="CnQ-CS-aNg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zIC-Th-8vw" secondAttribute="trailing" constant="91" id="IZ7-DG-XW5"/>
                             <constraint firstItem="Xzt-eJ-qIx" firstAttribute="leading" secondItem="ae2-lF-xKw" secondAttribute="leading" id="JC9-gp-Jbe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YIB-Of-Pj3" secondAttribute="trailing" constant="9" id="NpA-7i-yN7"/>
                             <constraint firstItem="Xzt-eJ-qIx" firstAttribute="centerX" secondItem="zIC-Th-8vw" secondAttribute="centerX" id="Qm0-yg-RhB"/>
                             <constraint firstItem="XEo-lo-cff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="Qmm-eh-KSW"/>
                             <constraint firstItem="zIC-Th-8vw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="X9m-Rm-yvq"/>
@@ -123,7 +109,6 @@
                         <outlet property="loginBtn" destination="ae2-lF-xKw" id="qYD-q0-Y2T"/>
                         <outlet property="loginEmail" destination="Xzt-eJ-qIx" id="u4m-yT-jk4"/>
                         <outlet property="loginPassword" destination="Ukp-Nh-8es" id="zi2-Tn-G5k"/>
-                        <outlet property="passwordBtn" destination="YIB-Of-Pj3" id="aWN-G6-xgO"/>
                         <outlet property="signUpBtn" destination="TCy-Al-kfb" id="rjz-0Z-ign"/>
                     </connections>
                 </viewController>
@@ -345,7 +330,6 @@
     </scenes>
     <resources>
         <image name="Instagram%20Black%20Logo%403x" width="525" height="150"/>
-        <image name="password_hidden" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

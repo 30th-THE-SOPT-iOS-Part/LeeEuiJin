@@ -13,7 +13,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginPassword: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
-    @IBOutlet weak var passwordBtn: UIButton!
+    let passwordBtn = UIButton(type:.system)
+
     
     
     // MARK: LifeCycle
@@ -22,6 +23,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         configureUI()
         self.loginEmail.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
         self.loginPassword.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        self.passwordBtn.addTarget(self, action: #selector(self.tabPasswordBtn(_:)), for: .touchUpInside)
     }
     
     //MARK: - UI
@@ -29,6 +31,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginEmail.clearButtonMode = .unlessEditing
         loginBtn.isEnabled = false
         passwordBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
+        passwordBtn.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        passwordBtn.contentMode = .scaleAspectFit
+        loginPassword.rightView = passwordBtn
+        loginPassword.rightViewMode = .always
+        passwordBtn.tintColor = .gray
         loginBtn.backgroundColor = UIColor(displayP3Red: 100/255, green: 150/255, blue: 250/255, alpha: 1)
     }
     
@@ -44,17 +51,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
-    @IBAction func tabPasswordBtn(_ sender: Any) {
-        if passwordBtn.currentImage == UIImage(named: "password_hidden"){
-            passwordBtn.setImage(UIImage(named:"password_shown"), for: .normal)
-            loginPassword.isSecureTextEntry = false
-        } else {
-            passwordBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
-            loginPassword.isSecureTextEntry = true
-        }
-        
-    }
-    
+
     //MARK: Custom Methods
     
     /// 이메일 textField와 비밀번호 textField가 Filled되면 버튼 활성화 되는 메서드
@@ -66,6 +63,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             loginBtn.isEnabled = false
         }
       }
+    @objc func tabPasswordBtn(_ sender: Any) {
+        if passwordBtn.currentImage == UIImage(named: "password_hidden"){
+            passwordBtn.setImage(UIImage(named:"password_shown"), for: .normal)
+            loginPassword.isSecureTextEntry = false
+        } else {
+            passwordBtn.setImage(UIImage(named:"password_hidden"), for: .normal)
+            loginPassword.isSecureTextEntry = true
+        }
+        
+    }
   
     
     private func makeAlert(_ message : String){
@@ -81,6 +88,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         alertViewController.addAction(okAction)
         present(alertViewController, animated: true)
+    }
+    
+    private func setPasswordBtnToRightView(){
+        loginPassword.setPasswordBtn(with: UIImage(named: "password_hidden")!, mode: .always)
     }
 }
 
@@ -106,6 +117,8 @@ extension LoginViewController{
         }
     }
 }
+
+
     
 
 
