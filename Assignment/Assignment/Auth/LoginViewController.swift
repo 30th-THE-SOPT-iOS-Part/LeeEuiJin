@@ -90,9 +90,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         present(alertViewController, animated: true)
     }
     
-    private func setPasswordBtnToRightView(){
-        loginPassword.setPasswordBtn(with: UIImage(named: "password_hidden")!, mode: .always)
-    }
+
 }
 
 
