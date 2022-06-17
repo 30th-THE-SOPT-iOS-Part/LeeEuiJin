@@ -2,7 +2,7 @@
 
 
 # iOS 7차 과제 : 과제 정리하기
-## 1. 1차 과제 ~ 4차 과제 Issue 정리하기
+## 1. 1차 과제 ~ 4차 과제 : ⭐️ Instagram Clone Coding ⭐️ - Issue 정리하기
 <details>
   <summary> 토글 접기 / 펼치기 </summary>
   <div markdown="1">
@@ -141,7 +141,7 @@ extension UIImageView {
  
 
 
-## 2. 클-디 과제 Issue 정리하기
+## 2. 5차 과제 ~ 6차 과제: 🍈 Melon Clone Coding 🍈 - Issue 정리하기
 <details>
   <summary> 토글 접기 / 펼치기 </summary>
   <div markdown="1">
