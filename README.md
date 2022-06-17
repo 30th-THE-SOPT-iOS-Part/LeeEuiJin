@@ -9,7 +9,7 @@
     
 1. Convention 맞추어서 폴더링, 주석, 변수 네이밍 붙이는 방법 숙달 완료! + GitHub 다루는 방법 확실히!
 2. Appearance 를 활용한 탭바 색 전환
-```
+```Swift
 //
 //  TabBarController.swift
 //  Assignment Week1
@@ -64,7 +64,7 @@ extension TabBarController: UITabBarControllerDelegate {
 ```
 
 3. .을 이용한 문법 -> Struct를 enum 처럼 사용한 것!
-```
+```Swift
 struct Thing : RawRepresentable {
 	let rawValue : Int
 	static let one : Thing = Thing(rawValue : 1)
@@ -72,7 +72,7 @@ struct Thing : RawRepresentable {
 }
 ```
 4.  Transition 넣으면서 Root View 바꾸는 코드
-```
+```Swift
 let storyboard = UIStoryboard(name: “TabBar”, bundle: Bundle.main)
             guard let nextVC = storyboard.instantiateViewController(withIdentifier: “TabBarController”) as? UITabBarController else {return}
             guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first else {return}
@@ -82,7 +82,7 @@ let storyboard = UIStoryboard(name: “TabBar”, bundle: Bundle.main)
 ```
 
 5. Right View를 이용해 UI 구성하기
-```
+```Swift
 // **MARK: LifeCycle**
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,7 +119,7 @@ let storyboard = UIStoryboard(name: “TabBar”, bundle: Bundle.main)
 ```
 
 6. URL로 이미지 불러오는 코드 예시 (아직 정확한 원리를 이해하지는 못함)
-```
+```Swift
 extension UIImageView {
     func loadImage(url: URL) {
         DispatchQueue.global().async { [weak self] in
