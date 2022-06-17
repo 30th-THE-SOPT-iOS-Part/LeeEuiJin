@@ -214,7 +214,7 @@ Height는 헤더가 있는 섹션은 높이 (또는 autodimension) 없는 섹션
 
 ## 3. App Jam 전 Check List
 - [ ] 지금까지 공부한 내용 총 정리
--> [Pabby’s World — Pabby’s World](https://pabbyworld.tistory.com)
+-> [개인 정리 블로그 링크 📚](https://pabbyworld.tistory.com)
 - [ ] Personal 솝커톤 (날씨 앱 클론 코딩 - 제한 시간 내에 구현하기)
 - [ ] Personal 솝커톤 (시계 앱 클론 코딩 - 제한 시간 내에 구현하기)
 - [ ] Code Base로 짜는 방법 익혀두기
