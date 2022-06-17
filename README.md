@@ -141,7 +141,7 @@ extension UIImageView {
  
 
 
-## 2. 5차 과제 ~ 6차 과제: 🍈 Melon Clone Coding 🍈 - Issue 정리하기
+## 2. 5차 과제 ~ 6차 과제 : 🍈 Melon Clone Coding 🍈 - Issue 정리하기
 <details>
   <summary> 토글 접기 / 펼치기 </summary>
   <div markdown="1">
